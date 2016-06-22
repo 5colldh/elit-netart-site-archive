@@ -1,0 +1,48 @@
+.inputmono {
+  font-family: $monospacefont;
+  font-style: normal;
+  font-weight: normal;
+}
+#input {
+    border: none;
+    background: #000;
+    font-family: $monospacefont;
+    width: 95%;
+    color: #fff;
+    height: 1.5em;
+    font-size: 1em;
+    padding-left: 4px;
+}
+#input:focus {
+    border: none;
+    background: #000;
+    outline: none;
+    font-family: $monospacefont;
+    color: #fff;
+    height: 1.5em;
+    font-size: 1em;
+    padding-left: 4px;
+}
+code {
+    background: #000;
+    color: #fff;
+    font-family: $monospacefont;
+    padding: 4px;
+    margin-right: 4px;
+    box-shadow: 2px 0 0 black, -2px 0 0 black;
+    -webkit-user-modify: read-write;
+    -moz-user-modify: read-write;
+    user-modify: read-write;
+}
+.nav-input {
+    text-align: center;
+}
+.inverse-code {
+    background: #fff;
+    color: #000;
+    font-family: $monospacefont;
+    padding: 4px;
+}
+#cursor {
+    font-family: $monospacefont;
+}

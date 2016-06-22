@@ -1,0 +1,53 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: false
+
+# Setup
+title:               E.LIT / NET.ART
+tagline:             'gallery - course - screening'
+description:         ''
+url:                 http://elit.jeffreymoro.com
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Jeffrey Moro
+  url:               https://jeffreymoro.com
+
+# Custom vars
+version:             1.0.0
+
+# Include / Exclude
+exclude:          [assets/img/original, assets/img/compressed]
+include:          [.htaccess]
+
+# Collections
+collections:
+  gallery:
+    output: true
+    permalink: /gallery/:path/
+  screening:
+    output: true
+    permalink: /screening/:path/
+
+# Retina Images
+retinamagick:
+    gallery-images:
+        source: assets/img/cropped/gallery
+        destination: assets/img
+        resize: "640x480"
+    screening-images:
+        source: assets/img/cropped/screening
+        destination: assets/img
+        resize: "640x480"
+
+# Sass settings
+sass:
+  sass_dir: public/css/_scss
+  style: compressed
+
+# Pagination
+gems: [jekyll-paginate]
